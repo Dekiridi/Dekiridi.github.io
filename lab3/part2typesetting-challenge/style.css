@@ -93,3 +93,13 @@ a[href^="http"] {
   background-position: right center;
   padding-right: 20px;
 }
+
+/* Lists */
+ul, ol {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: square;
+}
