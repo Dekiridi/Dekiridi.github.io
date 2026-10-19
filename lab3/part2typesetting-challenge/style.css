@@ -65,3 +65,31 @@ p, li {
 section h2 + p {
   text-indent: 2rem;
 }
+
+/* Links */
+a {
+  text-decoration: underline;
+  outline: none;
+}
+
+a:link {
+  color: #aa6666;
+}
+
+a:visited {
+  color: #8b4f4f;
+}
+
+a:hover,
+a:focus {
+  color: #d98f8f;
+  text-decoration: none;
+}
+
+a[href^="http"] {
+  background-image: url("external-link-52.png");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: right center;
+  padding-right: 20px;
+}
