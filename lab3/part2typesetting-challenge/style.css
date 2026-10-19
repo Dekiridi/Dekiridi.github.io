@@ -115,7 +115,8 @@ nav li {
   margin-bottom: 10px;
 }
 
-nav a {
+nav a:link,
+nav a:visited {
   display: block;
   padding: 15px;
   background-color: #aa6666;
