@@ -33,3 +33,12 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* Fonts */
+body {
+  font-family: "PT Serif", Georgia, serif;
+}
+
+h1, h2, {
+  font-family: "Roboto Slab", Georgia, serif;
+}
