@@ -11,14 +11,14 @@ body {
 }
 
 h1 {
-  font: 2rem;
+  font-size: 2rem;
   color: darkslategray;
   border-bottom: 10px dotted purple;
 }
 
 h2 {
   font-style: italic;
-  font: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .job-title {
