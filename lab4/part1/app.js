@@ -1,8 +1,5 @@
 // Complete variable definitions and random functions
 
-const customName = document.getElementById("custom-name");
-const generateBtn = document.querySelector(".generate");
-const story = document.querySelector(".story");
 
 function randomValueFromArray(array) {
   const random = Math.floor(Math.random() * array.length);
@@ -35,18 +32,27 @@ function returnRandomStoryString() {
 
 // Event listener and partial generate function definition
 
-generateBtn.addEventListener("click", generateStory);
+document.addEventListener("DOMContentLoaded", () => {
+  const generateBtn = document.querySelector(".generate");
+  generateBtn.addEventListener("click", generateStory);
+});
 
 function generateStory() {
+  const customName = document.getElementById("custom-name");
+  const story = document.querySelector(".story");
   let newStory = returnRandomStoryString();
+
   if (customName.value !== "") {
     const name = customName.value;
     newStory = newStory.replace("Bob", name);
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature = Math.round(94);
+    const weight = Math.round(300/14) + " stone";
+    const temperature = Math.round((94 - 32) * 5/9) + " celsius";
+    newStory = newStory.replace("300 pounds", weight);
+    newStory = newStory.replace("94 Fahrenheit", temperature);
+    
   }
 
   // TODO: replace "" with the correct expression
